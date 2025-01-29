@@ -1,40 +1,65 @@
-import React, { useState } from "react";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import "./gallery.css";
-import { useLocation } from "react-router-dom";
+// History.js
+import React from "react";
+import pk from "../assets/pk.svg";
+import ourStoryImg2 from "../assets/ourstory (2).jpeg";
 
-const Gallery = () => {
-  const [currentIndex, setCurrentIndex] = useState(1);
-  const location = useLocation();
-  const images = Object.keys(location.state)?.length;
-
-  const nextImage = () => {
-    setCurrentIndex(currentIndex === images ? 1 : currentIndex + 1);
-  };
-
-  const prevImage = () => {
-    setCurrentIndex(currentIndex === 1 ? images : currentIndex - 1);
-  };
-
+const History = () => {
   return (
-    <div className="image-gallery-container">
-      <div className="slider" style={{ position: "relative" }}>
-        <FaArrowLeft className="arrow-icon left" onClick={prevImage} />
-        <img src={location?.state[currentIndex]?.img} alt={`Image ${currentIndex + 1}`} />{" "}
-        <FaArrowRight className="arrow-icon right" onClick={nextImage} />
-      </div>
-      <h2 className="img-title " style={{fontSize: "50px", textTransform: "uppercase", marginBottom: 20}} >{location?.state[currentIndex]?.title}</h2>
+    <section className="panel theme--white text-justify px-4 mb-5">
+      <header className="section-header text-center mb-3">
+        <h2>OUR HISTORY</h2>
+      </header>
 
-      <div className="thumbnails">
-        {Object.keys(location?.state)?.map((key, index) => (
-          <img style={{width: "100%"}} key={index} src={location?.state[key]?.img} alt={`Thumbnail ${index + 1}`} className={currentIndex === index + 1 ? "imageSelected" : "imageUnSelected"} onClick={() => setCurrentIndex(index + 1)} />
-        ))}
+      <div className="history-section d-flex align-items-center mb-4">
+        <div className="history-image-container">
+          <img src={pk} alt="Pakistan Flag" className="history-image" />
+        </div>
+        <div className="history-date-container mx-3">
+          <h3 className="text-uppercase font-weight-bold">1953</h3>
+        </div>
+        <div className="history-description">
+          <ul>
+            <li>Army Medical Corps School, Lahore</li>
+          </ul>
+        </div>
       </div>
 
-      <br />
-      <br />
-    </div>
+      <div className="history-section d-flex align-items-center mb-4">
+        <div className="history-image-container">
+          <img src={ourStoryImg2} alt="Historical Image" className="history-image img-fluid rounded" />
+        </div>
+        <div className="history-date-container mx-3">
+          <h3 className="text-uppercase font-weight-bold">1960s - Establishment of AFPGMI</h3>
+        </div>
+        <div className="history-description">
+          <ul>
+            <li>The Army Medical Corps School evolved into the Armed Forces Post Graduate Medical Institute (AFPGMI), an advanced educational institution.</li>
+            <li>Focus on modernized medical education and comprehensive postgraduate training.</li>
+            <li>Expanded to include faculty members from various disciplines, integrating both military and civilian medical professionals.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="history-section d-flex align-items-center mb-4">
+        <div className="history-image-container">
+          <img src={pk} alt="Pakistan Flag" className="history-image" />
+        </div>
+        <div className="history-date-container mx-3">
+          <h3 className="text-uppercase font-weight-bold">1980s - Growth and Expansion</h3>
+        </div>
+        <div className="history-description">
+          <ul>
+            <li>The 1980s saw significant growth in the number of training programs offered.</li>
+            <li>AFPGMI became a renowned institution for its research-based postgraduate courses.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="history-image-container text-center">
+        <img src={ourStoryImg2} alt="Historical Image" className="img-fluid rounded" />
+      </div>
+    </section>
   );
 };
 
-export default Gallery;
+export default History;

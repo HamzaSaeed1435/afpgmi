@@ -1,170 +1,93 @@
 import React from "react";
-import ourStoryImg1 from "../assets/history.jpeg";
 import ourStoryImg2 from "../assets/ourstory (2).jpeg";
-import ourStoryImg3 from "../assets/ourstory (3).jpeg";
-import ourStoryImg4 from "../assets/ourstory (4).jpeg";
-import ourStoryImg5 from "../assets/ourstory (5).jpeg";
-import ourStoryImg6 from "../assets/ourstory (6).jpeg";
-import ourStoryImg7 from "../assets/ourstory (7).jpeg";
-import ourStoryImg8 from "../assets/ourstory (8).jpeg";
-import ImageSlider from "../components/Slider";
-
 import pk from "../assets/pk.svg";
-
+import "../css/about.css"; // Import the CSS file
+import History from "./history"; // Import the History component
 const AboutUs = () => {
   return (
     <div className="page-template-default page page-id-20180 page-parent">
       <main id="main" role="main">
-        <h2 id="main-content" className="sr-only-element" tabindex="-1">
+        <h2 id="main-content" className="sr-only-element" tabIndex="-1">
           Main Content
         </h2>
-        <section className="panel-collection departments" data-modular-content-collection>
-          <header>
-            <h1>OUR MISSION</h1>
-          </header>
-          <section className="panel theme--white" data-type="position-stmt" id="position-stmt-0" data-modular-content data-js="panel" data-index="0" data-width="full">
-            <p>To provide medical education & professional development to student officers through quality training programs delivered by dedicated faculty utilizing training aids and best practice teaching methodologies</p>
-          </section>
 
-          <section className="panel theme--white" data-type="section" id="excellence-in-research-teaching-and-medical-care" data-modular-content data-js="panel" data-index="7">
-            <header>
-              <h2 className="center">OUR HISTORY</h2>
-            </header>
+        {/* Header Section */}
+        <header className="section-header text-center mb-5">
+          <h1 className="text-uppercase font-weight-bold">ARMED FORCES POST GRADUATE MEDICAL INSTITUTE</h1>
+        </header>
 
-            <div className="about-us-container">
-              <div style={{ display: "flex" }}>
-                <div className="about-us-img-container">
-                  <img src={pk} style={{ height: "100px" }} />
-                </div>
-                <div className="about-us-date-container">
-                  <ul>
-                    <li>1953</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="about-us-container-content">
-                <ul>
-                  <li> Army Medical Corps School, Lahore</li>
-                </ul>
-              </div>
-              <img src={ourStoryImg2} className="about-us-container-content-img" style={{ height: "250px" }} />
-            </div>
-
-            <br />
-
-            <div className="about-us-container">
-              <div style={{ display: "flex" }}>
-                <div className="about-us-img-container">
-                  <img src={pk} style={{ height: "100px" }} />
-                </div>
-                <div className="about-us-date-container">
-                  <ul>
-                    <li style={{ marginBottom: 0 }}>1957</li>
-                    <li>1959</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="about-us-container-content">
-                <ul>
-                  <li style={{ marginBottom: 0 }}>Shifted to Rawalpindi</li>
-                  <li>College of Nursing</li>
-                </ul>
-              </div>
-              <ImageSlider imageContainerStyle={{ height: "250px", width: "500px" }} images={[ourStoryImg3, ourStoryImg4, ourStoryImg5]} />
-              {/* <img src={ourStoryImg2} className="about-us-container-content-img" style={{ height: "250px" }} /> */}
-            </div>
-
-            <br />
-
-            <div className="about-us-container">
-              <div style={{ display: "flex" }}>
-                <div className="about-us-img-container">
-                  <img src={pk} style={{ height: "100px" }} />
-                </div>
-                <div className="about-us-date-container">
-                  <ul>
-                    <li> 1960</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="about-us-container-content">
-                <ul>
-                  <li> Armed Forces Medical College</li>
-                </ul>
-              </div>
-              <ImageSlider imageContainerStyle={{ height: "250px", width: "500px" }} images={[ourStoryImg6, ourStoryImg7]} />
-            </div>
-            <br />
-
-            <div className="about-us-container">
-              <div style={{ display: "flex" }}>
-                <div className="about-us-img-container">
-                  <img src={pk} style={{ height: "100px" }} />
-                </div>
-                <div className="about-us-date-container">
-                  <ul>
-                    <li> 1997</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="about-us-container-content">
-                <ul>
-                  <li> Armed Forces Post Graduate Medical Institute</li>
-                </ul>
-              </div>
-              <ImageSlider imageContainerStyle={{ height: "250px", width: "500px" }} images={[ourStoryImg8]} />
-            </div>
-
-            {/* <section className="panel theme--white" data-type="image-content" id="who-we-are" data-img-loc="left">
-              <section>
-                <figure className="landscape">
-                  <img src={ourStoryImg1} />
-                  <img src={ourStoryImg2} />
-                </figure>
-                <div className="content" style={{ minHeight: "70vh" }}>
-                  <h3>1953 – Army Medical Corps School, Lahore</h3>
-                  <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
-                </div>
-              </section>
-            </section> */}
-
-            {/* <section className="panel theme--white" data-type="image-content" id="educating-tomorrows-global-citizens" data-img-loc="right">
-              <section>
-                <div className="content">
-                  <h3>1957 – Shifted to Rawalpindi</h3>
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum pass</p>
-                </div>
-                <figure className="landscape">
-                  <ImageSlider images={[ourStoryImg3, ourStoryImg4, ourStoryImg5]} />
-                </figure>
-              </section>
-            </section> */}
-
-            {/* <section className="panel theme--white" data-type="image-content" id="creating-knowledge-in-an-environment-of-academic-freedom" data-img-loc="left">
-              <section>
-                <figure className="landscape">
-                  <ImageSlider images={[ourStoryImg6, ourStoryImg7]} />
-                </figure>
-                <div className="content">
-                  <h3>1960 – Armed Forces Medical College</h3>
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum pass</p>
-                </div>
-              </section>
-            </section> */}
-
-            {/* <section className="panel theme--white" data-type="image-content" id="educating-tomorrows-global-citizens" data-img-loc="right">
-              <section>
-                <div className="content">
-                  <h3>1997 – Armed Forces Post Graduate Medical Institute</h3>
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum pass</p>
-                </div>
-                <figure className="landscape">
-                  <ImageSlider images={[ourStoryImg8]} />
-                </figure>
-              </section>
-            </section> */}
-          </section>
+        {/* About AFPGMI */}
+        <section className="panel theme--white text-justify px-4 mb-5">
+          <p>
+            AFPGMI is a premier postgraduate medical institute of Pakistan Army committed to fostering a holistic learning experience that transcends traditional exams. It serves as an alma mater for healthcare professionals from both military and civilian cadres, dedicated to providing career training across various disciplines within AMC, ADC, and AFNS.
+          </p>
+          <p>
+            AFPGMI stands as a beacon of research, epitomizing the pursuit of knowledge grounded in robust evidence and methodological rigor. It plays a pivotal role in reshaping research methodologies and nurturing a culture of critical appraisal, steering the learning trajectory toward greater reliability and relevance.
+          </p>
         </section>
+
+        {/* Key Points */}
+        <section className="panel theme--white text-justify px-4 mb-5">
+          <h2 className="text-center">KEY HIGHLIGHTS OF AFPGMI</h2>
+          <ul className="list-none">
+            <li>2nd largest Clinical Training Institute after CPSP</li>
+            <li>62 clinical specialties</li>
+            <li>40 Training Hospitals/Institutes</li>
+            <li>307 Departments</li>
+            <li>MSc (Healthcare Adm) - Oldest program in the country, adopted from Baylor University/US Army in 1981</li>
+            <li>78 x Exams conducted every year at 12 x National & 6 x Global Centers</li>
+            <li>College of Nursing offering training in 13 x Sub-Specialties (largest in the country)</li>
+          </ul>
+        </section>
+
+        {/* Mission Section */}
+        <section className="panel theme--white text-justify px-4 mb-5">
+          <header className="section-header text-center mb-3">
+            <h2>OUR MISSION</h2>
+          </header>
+          <p className="text-center">
+          To provide med edn and professional dev to student offrs through quality trg progms del by dedicated faculty utilizing best prac teaching methodologies. 
+          </p>
+        </section>
+
+
+            {/* Mission Section */}
+            <section className="panel theme--white text-justify px-4 mb-5">
+          <header className="section-header text-center mb-3">
+            <h2>OUR VISION
+            </h2>
+          </header>
+          <p className="text-center">
+          Train students to come out as knowledgeable, disciplined, regimented and well-conversant offrs who by optimally utilizing resources, ensure qual assurance in patient care and can actively prom implementation of the Laws of Med Sciences for the betterment of patient care and safety 
+          </p>
+        </section>
+
+        {/* History Section */}
+        {/* <section className="panel theme--white text-justify px-4 mb-5">
+          <header className="section-header text-center mb-3">
+            <h2>Our History</h2>
+          </header>
+          <div className="history-section d-flex align-items-center mb-4">
+            <div className="history-image-container">
+              <img src={pk} alt="Pakistan Flag" className="history-image" />
+            </div>
+            <div className="history-date-container mx-3">
+              <h3 className="text-uppercase font-weight-bold">1953</h3>
+            </div>
+            <div className="history-description">
+              <ul>
+                <li>Army Medical Corps School, Lahore</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="history-image-container text-center">
+            <img src={ourStoryImg2} alt="Historical Image" className="img-fluid rounded" />
+          </div>
+        </section> */}
+
+           {/* Including the History component */}
+           <History />
       </main>
     </div>
   );

@@ -1,0 +1,106 @@
+/* Apply this to ensure content is centered correctly */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Make sure content aligns at the top */
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Ensure the page template is centered */
+  .page-template-default {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align at the top */
+    align-items: center; /* Center the content horizontally */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the page */
+    padding-top: 20px; /* Prevent header from being too close to the top */
+  }
+  
+  /* Make sure header is not hidden */
+  .section-header h1 {
+    font-size: 2.5rem;
+    color: #16a085; /* Your blue color */
+    text-align: center;
+    margin-top: 0; /* Remove any extra space above the header */
+    padding: 1rem 0; /* Add some space around header */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Panel Styling */
+  .panel {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 -4px 10px rgba(0, 0, 0, 0.1); /* Top and Bottom shadows */
+    box-sizing: border-box; /* Ensure padding doesn't push the box off-screen */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Center text and adjust margins */
+  .text-justify {
+    text-align: justify;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mb-5 {
+    margin-bottom: 3rem;
+  }
+  
+  .mx-3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .font-weight-bold {
+    font-weight: 700;
+  }
+  
+  /* History Section */
+  .history-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .history-image-container img {
+    max-height: 100px;
+  }
+  
+  .history-description ul {
+    list-style-type: none;
+  }
+  
+  .history-image-container img.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Header Section */
+.section-header h1 {
+    font-size: 2.5rem;
+    color: rgba(0, 45, 114, 0.8); /* Updated to your new color */
+    text-align: center;
+    margin-top: 0;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  
