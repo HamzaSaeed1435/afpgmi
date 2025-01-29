@@ -1,0 +1,126 @@
+.header-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.card-container {
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* width: 355px; */
+  /* height: 500px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-image {
+  width: auto; /* Set the width to fill the container */
+  height: 380px; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  transition: all 400ms ease-in-out;
+}
+
+.card-image:hover {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+}
+
+.card-title {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.card-description {
+  font-size: 17px;
+  color: #004282;
+  margin-bottom: 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+.card-description a {
+  text-decoration: none;
+}
+.event-date {
+  /* margin: 425px 0 0 268px; */
+  font-size: 6px;
+  font-weight: bold;
+  padding: 5px 20px 10px 20px;
+  border-radius: 50% 0 0 0;
+  color: #fff;
+  background-color: #002d72;
+  position: absolute;
+  bottom: 100px;
+  right: 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+.event-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  font-size: 22px;
+}
+.second-cards-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.main-container img {
+  border-radius: 6px;
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 300ms ease;
+}
+.main-container img:hover {
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+.main-container .card {
+  width: 400px;
+  border: none;
+  box-shadow: none;
+  height: 350px;
+  margin: 10px 0;
+}
+.main-container .card h2 {
+  color: #161616;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}

@@ -1,0 +1,141 @@
+.image-gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: 1px solid #002d72;
+  margin-left: 20px;
+  color: #002d72;
+  font-size: 48px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.arrow-icon:hover {
+  background-color: #002d72;
+  color: #fff;
+  top: 46%;
+  transform: scale(1.1);
+}
+
+.left {
+  left: 10px;
+}
+.image-gallery-container img {
+  width: 100vw;
+  height: 89vh;
+  object-fit: cover;
+}
+@media screen and (max-width: 725px) {
+  .image-gallery-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.right {
+  right: 10px;
+}
+.thumbnails {
+  display: flex;
+  overflow-x: scroll;
+  padding: 2px;
+  display: flex;
+  overflow-x: auto;
+  padding: 2px;
+}
+.thumbnails::-webkit-scrollbar {
+  width: 5px;
+  height: 9px;
+}
+
+.thumbnails::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.thumbnails::-webkit-scrollbar-thumb {
+  background: #002d72;
+  border-radius: 5px;
+}
+
+.thumbnails::-webkit-scrollbar-thumb:hover {
+  background: #001f4d;
+}
+
+.thumbnails img {
+  width: 100px;
+  height: 75px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.imageSelected {
+  border: 3px solid #002d72;
+  border-radius: 6px;
+}
+.imageUnSelected {
+  border-radius: 6px;
+}
+/* ============================================= */
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity */
+  color: white;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: relative;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+/* Add other styles for thumbnails as needed */
+
+.img-title {
+  text-align: center;
+  font-size: 5vmin;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 0.075ch;
+  color: rgba(0, 45, 114, 0.8);
+  text-align: center;
+  --light-pos-x: 1;
+  --light-pos-y: -1;
+  --rim-size: 0.02ch;
+  --shadow-offset: 0.2ch;
+  --shadow-blur: 0.1ch;
+  text-shadow: calc(max(var(--rim-size), 1px) * var(--light-pos-x)) calc(max(var(--rim-size), 1px) * var(--light-pos-y)) hsl(0 0% 100%), calc(max(var(--rim-size), 1px) * var(--light-pos-x) * -1) calc(max(var(--rim-size), 1px) * var(--light-pos-y) * -1) hsl(0 0% 60%), calc(var(--shadow-offset) * var(--light-pos-x) * -1) calc(var(--shadow-offset) * var(--light-pos-y) * -1) var(--shadow-blur) hsl(0 0% 50% / 0.75);
+}
