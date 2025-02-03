@@ -71,7 +71,7 @@ const History = ({ src, title }) => {
   return (
     <div className="campus-life">
       <div className="second-cards-title">
-        <h2>FACILITIES AND AMENITIES</h2>
+        <h2>OUR HISTORY</h2>
       </div>
 
       <div className="cards-container" style={{ marginTop: 20 }}>
