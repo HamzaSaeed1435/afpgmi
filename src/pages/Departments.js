@@ -16,6 +16,7 @@ const Departments = () => {
       image: DepartmentsHeroImg1,
       data: [
         { coursesOffered: "MSc Health Care Administration", duration: "104 Weeks", freq: "Once an year", type: "Degree(NUMS)" },
+        { coursesOffered: "MID CAREER COURSE (MCC)", duration: "12 Weeks", freq: "Thrice a year", type: "Degree(NUMS)" },
         { coursesOffered: "Senior Army Dental Officers Course ", duration: "16 Weeks", freq: "Once an year", type: "Certificate(NUMS)" },
         { coursesOffered: "Mid Career Course", duration: "12  Weeks", freq: "Thrice an year", type: "Certificate(NUMS)" },
         { coursesOffered: "Professional Development Courses for Junior Officers", duration: "02  Weeks", freq: "Once in two months", type: "Certificate(NUMS)" },
@@ -23,7 +24,7 @@ const Departments = () => {
       ],
     },
     {
-      name: "DEPARTMENT OF CLINICAL & BASIC SCIENCES",
+      name: "DEPARTMENT OF BASIC, CLINICAL & ALLIED HEALTH SCIENCES",
       image: DepartmentsHeroImg2,
 
       data: [
@@ -38,7 +39,7 @@ const Departments = () => {
         { coursesOffered: "Diploma in Cardiology", duration: "-", freq: "Once an year", type: "Diploma (NUMS)" },
       ],
     },
-    { name: "MASTERS OF SCIENCE IN PUBLIC HEALTH (MSPH)", image: DepartmentsHeroImg3, data: [{ name: "Started at AFPGMI from 2001 with UHS" }, { name: "Affiliated with NUMS in 2016" }, { name: "Presently - 2 batches undergoing training" }, { name: "Intensive Curriculum includes", subData: ["Basic Public Health Sciences", "Essential Managerial and Analytical Skills including Project Planning and Evaluation", "Epidemiological Investigations", "Health System Analysis and Research", "Reproductive and Child Health", "Environment and Occupational Health", "Disease Control"] }] },
+    { name: "DEPARTMENT OF SCIENCE IN PUBLIC HEALTH (MSPH)", image: DepartmentsHeroImg3, data: [{ name: "Started at AFPGMI from 2001 with UHS" }, { name: "Affiliated with NUMS in 2016" }, { name: "Presently - 2 batches undergoing training" }, { name: "Intensive Curriculum includes", subData: ["Basic Public Health Sciences", "Essential Managerial and Analytical Skills including Project Planning and Evaluation", "Epidemiological Investigations", "Health System Analysis and Research", "Reproductive and Child Health", "Environment and Occupational Health", "Disease Control"] }] },
     {
       name: "EXAM DEPARTMENT",
       image: DepartmentsHeroImg4,
