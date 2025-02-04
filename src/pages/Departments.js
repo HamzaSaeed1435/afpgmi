@@ -16,11 +16,12 @@ const Departments = () => {
       image: DepartmentsHeroImg1,
       data: [
         { coursesOffered: "MSc Health Care Administration", duration: "104 Weeks", freq: "Once an year", type: "Degree(NUMS)" },
-        { coursesOffered: "MID CAREER COURSE (MCC)", duration: "12 Weeks", freq: "Thrice a year", type: "Degree(NUMS)" },
+        { coursesOffered: "Mid Career Course (MCC)", duration: "12 Weeks", freq: "Thrice a year", type: "Degree(NUMS)" },
         { coursesOffered: "Senior Army Dental Officers Course ", duration: "16 Weeks", freq: "Once an year", type: "Certificate(NUMS)" },
-        { coursesOffered: "Mid Career Course", duration: "12  Weeks", freq: "Thrice an year", type: "Certificate(NUMS)" },
         { coursesOffered: "Professional Development Courses for Junior Officers", duration: "02  Weeks", freq: "Once in two months", type: "Certificate(NUMS)" },
         { coursesOffered: "Sports Medicine Course", duration: "12  Weeks", freq: "As & when required", type: "Certificate(NUMS)" },
+        { coursesOffered: "Disaster MGMT Course", duration: "12  Weeks", freq: "As & when required", type: "Certificate(NUMS)" },
+
       ],
     },
     {
