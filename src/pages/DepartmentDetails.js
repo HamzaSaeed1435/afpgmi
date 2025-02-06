@@ -11,6 +11,27 @@ import downCell from "../assets/downcell.jpg";
 import chochrane from "../assets/chochrane.jpg";
 import research from "../assets/research.jpg";
 import qame from "../assets/QAME.jpg";
+import first from "../assets/first.jpg";
+import second from "../assets/second.jpg";
+import third from "../assets/third.jpg";
+import four from "../assets/four.jpg";
+import five from "../assets/five.jpg";
+import six from "../assets/six.jpg";
+import seven from "../assets/seven.jpg";
+
+import one from "../assets/one.jpg";
+import two from "../assets/two.jpg";
+import three from "../assets/three.jpg";
+import four4 from "../assets/four.jpg";
+
+import a from "../assets/a.jpg";
+import b from "../assets/b.jpg";
+import c from "../assets/c.jpg";
+import d from "../assets/d.jpg";
+import e from "../assets/e.jpg";
+import f from "../assets/f.jpg";
+import g from "../assets/g.jpg";
+import h from "../assets/h.jpg";
 
 const DepartmentDetails = () => {
   const { id } = useParams();
@@ -87,397 +108,522 @@ const DepartmentDetails = () => {
     ];
 
     if (state?.index === 0) {
+      // return (
+      //   <div style={styles.container}>
+      //     {/* Courses Overview Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>Courses Overview</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[0]}
+      //           alt="Courses Overview"
+      //           style={styles.imageContainer}
+      //         />
+      //         <h2
+      //           style={{
+      //             textTransform: "uppercase",
+      //             fontWeight: 600,
+      //             fontSize: "24px",
+      //             marginBottom: "15px",
+      //             color: "#34495e",
+      //           }}
+      //         >
+      //           Course Details
+      //         </h2>
+      //         <ul style={styles.list}>
+      //           {state?.data?.map((course, index) => (
+      //             <li key={index}>
+      //               {course.coursesOffered} - {course.duration} - {course.type}
+      //             </li>
+      //           ))}
+      //         </ul>
+      //       </div>
+      //     </div>
+
+      //     {/* MSc Healthcare Administration */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>MSc (HEALTH CARE ADM)</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[1]}
+      //           alt="Healthcare Administration"
+      //           style={styles.imageContainer}
+      //         />
+      //         <h2
+      //           style={{
+      //             textTransform: "uppercase",
+      //             fontWeight: 600,
+      //             fontSize: "24px",
+      //             marginBottom: "15px",
+      //             color: "#34495e",
+      //           }}
+      //         >
+      //           Program Details
+      //         </h2>
+      //         <ul style={styles.list}>
+      //           <li>
+      //             Oldest and premier training program for HCAs in the city
+      //           </li>
+      //           <li>
+      //             Important service milestone in career progression of HCAs
+      //           </li>
+      //           <li>
+      //             Aimed to formally train and develop future leadership to meet
+      //             modern healthcare administration challenges
+      //           </li>
+      //           <li>
+      //             Main focus of training:
+      //             <ul>
+      //               {" "}
+      //               <li>Enhancement of communication skills</li>
+      //               <li>Instilling leadership traits</li>
+      //             </ul>
+      //           </li>
+      //           <li>
+      //             Two-year program under NUMS, annual intake (35-40 students)
+      //           </li>
+      //         </ul>
+      //       </div>
+      //     </div>
+
+      //     {/* Professional Development Courses */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>
+      //           Professional Development Courses
+      //         </span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[2]}
+      //           alt="Professional Development"
+      //           style={styles.imageContainer}
+      //         />
+      //         <h2
+      //           style={{
+      //             textTransform: "uppercase",
+      //             fontWeight: 600,
+      //             fontSize: "24px",
+      //             marginBottom: "15px",
+      //             color: "#34495e",
+      //           }}
+      //         >
+      //           FOR JUNIOR OFFICERS
+      //         </h2>
+      //         <div style={{ display: "flex" }}>
+      //           <ul style={styles.list}>
+      //             <li>HC Project Management</li>
+      //             <li>HC Supply Chain Management</li>
+      //             <li>HC Financial Management</li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>HC HRM & Leadership</li>
+      //             <li>HC Inventory Management</li>
+      //             <li>Health Informatics</li>
+      //           </ul>
+      //         </div>
+      //       </div>
+      //     </div>
+      //   </div>
+      // );
       return (
-        <div style={styles.container}>
-          {/* Courses Overview Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>Courses Overview</span>
+        <>
+          <div style={styles.container}>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                {/* Main Department Image */}
+                <img
+                  src={images[0]}
+                  alt="Department Image"
+                  style={styles.imageContainer}
+                />
+                {/* Detail Department Image */}
+                <img
+                  src={one}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[0]}
-                alt="Courses Overview"
-                style={styles.imageContainer}
-              />
-              <h2
-                style={{
-                  textTransform: "uppercase",
-                  fontWeight: 600,
-                  fontSize: "24px",
-                  marginBottom: "15px",
-                  color: "#34495e",
-                }}
-              >
-                Course Details
-              </h2>
-              <ul style={styles.list}>
-                {state?.data?.map((course, index) => (
-                  <li key={index}>
-                    {course.coursesOffered} - {course.duration} - {course.type}
-                  </li>
-                ))}
-              </ul>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={two}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
-          </div>
-
-          {/* MSc Healthcare Administration */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>MSc (HEALTH CARE ADM)</span>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={three}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[1]}
-                alt="Healthcare Administration"
-                style={styles.imageContainer}
-              />
-              <h2
-                style={{
-                  textTransform: "uppercase",
-                  fontWeight: 600,
-                  fontSize: "24px",
-                  marginBottom: "15px",
-                  color: "#34495e",
-                }}
-              >
-                Program Details
-              </h2>
-              <ul style={styles.list}>
-                <li>
-                  Oldest and premier training program for HCAs in the city
-                </li>
-                <li>
-                  Important service milestone in career progression of HCAs
-                </li>
-                <li>
-                  Aimed to formally train and develop future leadership to meet
-                  modern healthcare administration challenges
-                </li>
-                <li>
-                  Main focus of training:
-                  <ul>
-                    {" "}
-                    <li>Enhancement of communication skills</li>
-                    <li>Instilling leadership traits</li>
-                  </ul>
-                </li>
-                <li>
-                  Two-year program under NUMS, annual intake (35-40 students)
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Professional Development Courses */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>
-                Professional Development Courses
-              </span>
-            </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[2]}
-                alt="Professional Development"
-                style={styles.imageContainer}
-              />
-              <h2
-                style={{
-                  textTransform: "uppercase",
-                  fontWeight: 600,
-                  fontSize: "24px",
-                  marginBottom: "15px",
-                  color: "#34495e",
-                }}
-              >
-                FOR JUNIOR OFFICERS
-              </h2>
-              <div style={{ display: "flex" }}>
-                <ul style={styles.list}>
-                  <li>HC Project Management</li>
-                  <li>HC Supply Chain Management</li>
-                  <li>HC Financial Management</li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>HC HRM & Leadership</li>
-                  <li>HC Inventory Management</li>
-                  <li>Health Informatics</li>
-                </ul>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={four4}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
               </div>
             </div>
           </div>
-        </div>
+        </>
       );
     } else if (state?.index === 1) {
+      // return (
+      //   <div style={styles.container}>
+      //     {/* Department of Basic & Clinical Sciences */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>
+      //           DEPARTMENT OF BASIC & CLINICAL SCIENCES
+      //         </span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[0]} // Replace with your image
+      //           alt="Basic & Clinical Sciences"
+      //           style={styles.imageContainer}
+      //         />
+      //         <p style={{ textAlign: "justify", marginBottom: "15px" }}>
+      //           The Department of Basic & Clinical Sciences provides
+      //           comprehensive education and training in core medical sciences.
+      //         </p>
+      //       </div>
+      //     </div>
+
+      //     {/* Department of Allied Health Sciences */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>
+      //           DEPARTMENT OF ALLIED HEALTH SCIENCES
+      //         </span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[1]} // Replace with your image
+      //           alt="Allied Health Sciences"
+      //           style={styles.imageContainer}
+      //         />
+      //         <p style={{ textAlign: "justify", marginBottom: "15px" }}>
+      //           This department focuses on providing high-quality training and
+      //           education in allied health sciences.
+      //         </p>
+      //       </div>
+      //     </div>
+
+      //     {/* Post Graduate Programs */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>POST GRADUATE PROGRAMS</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[2]} // Replace with your image
+      //           alt="Post Graduate Programs"
+      //           style={styles.imageContainer}
+      //         />
+      //         <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
+      //           <ul style={styles.list}>
+      //             <li>FCPS / MCPS - CPSP | Varies | Specialized </li>
+      //             <li>PhD (PATH) - NUMS | Varies | Research</li>
+      //             <li>M PHIL - NUMS | 2 years | Research </li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>DIP IN CARDIOLOGY - NUMS | Varies | Specialized</li>
+      //             <li>
+      //               MS (TRANSFUSION MEDICINE) - NUMS | 2 years | Specialized
+      //             </li>
+      //           </ul>
+      //         </div>
+      //       </div>
+      //     </div>
+
+      //     {/* Major Specialties - Clinical Sciences */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>
+      //           MAJOR SPECIALTIES - 31(CLINICAL SCIENCES)
+      //         </span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[3]} // Replace with your image
+      //           alt="Clinical Sciences"
+      //           style={styles.imageContainer}
+      //         />
+      //         <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
+      //           <ul style={styles.list}>
+      //             <li>Medicine</li>
+      //             <li>Pediatrics</li>
+      //             <li>Radiology</li>
+      //             <li>Dermatology</li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>Psychiatry</li>
+      //             <li>Rehab Med</li>
+      //             <li>Nuclear Med</li>
+      //             <li>Emergency Med</li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>ENT</li>
+      //             <li>Family Med</li>
+      //             <li>Radio Oncology</li>
+      //             <li>Ophthalmology</li>
+      //           </ul>
+      //         </div>
+      //       </div>
+      //     </div>
+
+      //     {/* Pathology Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>PATHOLOGY</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[4]} // Replace with your image
+      //           alt="Pathology"
+      //           style={styles.imageContainer}
+      //         />
+      //         <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
+      //           <ul style={styles.list}>
+      //             <li>Histopathology</li>
+      //             <li>Chemical Pathology</li>
+      //             <li>Virology</li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>Immunology</li>
+      //             <li>Hematology</li>
+      //             <li>Microbiology</li>
+      //           </ul>
+      //         </div>
+      //       </div>
+      //     </div>
+
+      //     {/* BMS Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>
+      //           BMS (BASIC MEDICAL SCIENCES)
+      //         </span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[5]} // Replace with your image
+      //           alt="Basic Medical Sciences"
+      //           style={styles.imageContainer}
+      //         />
+      //         <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
+      //           <ul style={styles.list}>
+      //             <li>Anatomy</li>
+      //             <li>Physiology</li>
+      //             <li>Biochemistry</li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>Pharmacology</li>
+      //             <li>Community Medicine</li>
+      //           </ul>
+      //         </div>
+      //       </div>
+      //     </div>
+
+      //     {/* Dentistry Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>DENTISTRY</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[6]} // Replace with your image
+      //           alt="Dentistry"
+      //           style={styles.imageContainer}
+      //         />
+      //         <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
+      //           <ul style={styles.list}>
+      //             <li>Oral Maxillofacial Surgery</li>
+      //             <li>Prosthodontics</li>
+      //             <li>Orthodontics</li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>Operative Dentistry</li>
+      //             <li>Periodontology</li>
+      //           </ul>
+      //         </div>
+      //       </div>
+      //     </div>
+
+      //     {/* Medicine & Allied Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>MEDICINE & ALLIED</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[7]} // Replace with your image
+      //           alt="Medicine & Allied"
+      //           style={styles.imageContainer}
+      //         />
+      //         <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
+      //           <ul style={styles.list}>
+      //             <li>Cardiology</li>
+      //             <li>Pediatric Cardiology</li>
+      //             <li>Nephrology</li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>Gastroenterology</li>
+      //             <li>Intensive Care / Critical Care Medicine</li>
+      //             <li>Pulmonology</li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>Neurology</li>
+      //             <li>Neonatology</li>
+      //             <li>Clinical Hematology</li>
+      //           </ul>
+      //         </div>
+      //       </div>
+      //     </div>
+
+      //     {/* Allied Health Sciences Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>ALLIED HEALTH SCIENCES</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[8]} // Replace with your image
+      //           alt="Allied Health Sciences"
+      //           style={styles.imageContainer}
+      //         />
+      //         <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
+      //           <ul style={styles.list}>
+      //             <li>Med Lab Tech (MLT)</li>
+      //             <li>Cardiac Perfusion (CP)</li>
+      //             <li>Med Imaging Tech (MIT)</li>
+      //           </ul>
+      //         </div>
+      //       </div>
+      //     </div>
+
+      //     {/* Sub Specialties - Surgery & Allied */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>
+      //           SUB SPECIALTIES - SURGERY & ALLIED
+      //         </span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[9]} // Replace with your image
+      //           alt="Surgery & Allied"
+      //           style={styles.imageContainer}
+      //         />
+      //         <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
+      //           <ul style={styles.list}>
+      //             <li>Cardiac Anaesthesia</li>
+      //             <li>Neuro Surgery</li>
+      //             <li>Orthopaedic Surgery</li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>Cardiac Surgery</li>
+      //             <li>Urology</li>
+      //             <li>Laparoscopic Surgery</li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>Pain Management</li>
+      //             <li>Breast Surgery</li>
+      //             <li>Vascular Surgery</li>
+      //           </ul>
+      //         </div>
+      //       </div>
+      //     </div>
+      //   </div>
+      // );
       return (
-        <div style={styles.container}>
-          {/* Department of Basic & Clinical Sciences */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>
-                DEPARTMENT OF BASIC & CLINICAL SCIENCES
-              </span>
+        <>
+          <div style={styles.container}>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                {/* Main Department Image */}
+                <img
+                  src={images[0]}
+                  alt="Department Image"
+                  style={styles.imageContainer}
+                />
+                {/* Detail Department Image */}
+                <img
+                  src={first}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[0]} // Replace with your image
-                alt="Basic & Clinical Sciences"
-                style={styles.imageContainer}
-              />
-              <p style={{ textAlign: "justify", marginBottom: "15px" }}>
-                The Department of Basic & Clinical Sciences provides
-                comprehensive education and training in core medical sciences.
-              </p>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={second}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
-          </div>
-
-          {/* Department of Allied Health Sciences */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>
-                DEPARTMENT OF ALLIED HEALTH SCIENCES
-              </span>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={third}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[1]} // Replace with your image
-                alt="Allied Health Sciences"
-                style={styles.imageContainer}
-              />
-              <p style={{ textAlign: "justify", marginBottom: "15px" }}>
-                This department focuses on providing high-quality training and
-                education in allied health sciences.
-              </p>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={four}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
-          </div>
-
-          {/* Post Graduate Programs */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>POST GRADUATE PROGRAMS</span>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={five}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[2]} // Replace with your image
-                alt="Post Graduate Programs"
-                style={styles.imageContainer}
-              />
-              <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
-                <ul style={styles.list}>
-                  <li>FCPS / MCPS - CPSP | Varies | Specialized </li>
-                  <li>PhD (PATH) - NUMS | Varies | Research</li>
-                  <li>M PHIL - NUMS | 2 years | Research </li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>DIP IN CARDIOLOGY - NUMS | Varies | Specialized</li>
-                  <li>
-                    MS (TRANSFUSION MEDICINE) - NUMS | 2 years | Specialized
-                  </li>
-                </ul>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={six}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={seven}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
               </div>
             </div>
           </div>
-
-          {/* Major Specialties - Clinical Sciences */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>
-                MAJOR SPECIALTIES - 31(CLINICAL SCIENCES)
-              </span>
-            </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[3]} // Replace with your image
-                alt="Clinical Sciences"
-                style={styles.imageContainer}
-              />
-              <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
-                <ul style={styles.list}>
-                  <li>Medicine</li>
-                  <li>Pediatrics</li>
-                  <li>Radiology</li>
-                  <li>Dermatology</li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>Psychiatry</li>
-                  <li>Rehab Med</li>
-                  <li>Nuclear Med</li>
-                  <li>Emergency Med</li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>ENT</li>
-                  <li>Family Med</li>
-                  <li>Radio Oncology</li>
-                  <li>Ophthalmology</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Pathology Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>PATHOLOGY</span>
-            </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[4]} // Replace with your image
-                alt="Pathology"
-                style={styles.imageContainer}
-              />
-              <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
-                <ul style={styles.list}>
-                  <li>Histopathology</li>
-                  <li>Chemical Pathology</li>
-                  <li>Virology</li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>Immunology</li>
-                  <li>Hematology</li>
-                  <li>Microbiology</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* BMS Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>
-                BMS (BASIC MEDICAL SCIENCES)
-              </span>
-            </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[5]} // Replace with your image
-                alt="Basic Medical Sciences"
-                style={styles.imageContainer}
-              />
-              <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
-                <ul style={styles.list}>
-                  <li>Anatomy</li>
-                  <li>Physiology</li>
-                  <li>Biochemistry</li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>Pharmacology</li>
-                  <li>Community Medicine</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Dentistry Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>DENTISTRY</span>
-            </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[6]} // Replace with your image
-                alt="Dentistry"
-                style={styles.imageContainer}
-              />
-              <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
-                <ul style={styles.list}>
-                  <li>Oral Maxillofacial Surgery</li>
-                  <li>Prosthodontics</li>
-                  <li>Orthodontics</li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>Operative Dentistry</li>
-                  <li>Periodontology</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Medicine & Allied Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>MEDICINE & ALLIED</span>
-            </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[7]} // Replace with your image
-                alt="Medicine & Allied"
-                style={styles.imageContainer}
-              />
-              <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
-                <ul style={styles.list}>
-                  <li>Cardiology</li>
-                  <li>Pediatric Cardiology</li>
-                  <li>Nephrology</li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>Gastroenterology</li>
-                  <li>Intensive Care / Critical Care Medicine</li>
-                  <li>Pulmonology</li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>Neurology</li>
-                  <li>Neonatology</li>
-                  <li>Clinical Hematology</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Allied Health Sciences Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>ALLIED HEALTH SCIENCES</span>
-            </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[8]} // Replace with your image
-                alt="Allied Health Sciences"
-                style={styles.imageContainer}
-              />
-              <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
-                <ul style={styles.list}>
-                  <li>Med Lab Tech (MLT)</li>
-                  <li>Cardiac Perfusion (CP)</li>
-                  <li>Med Imaging Tech (MIT)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Sub Specialties - Surgery & Allied */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>
-                SUB SPECIALTIES - SURGERY & ALLIED
-              </span>
-            </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[9]} // Replace with your image
-                alt="Surgery & Allied"
-                style={styles.imageContainer}
-              />
-              <div style={{ display: "flex", gap: "20px", marginTop: "15px" }}>
-                <ul style={styles.list}>
-                  <li>Cardiac Anaesthesia</li>
-                  <li>Neuro Surgery</li>
-                  <li>Orthopaedic Surgery</li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>Cardiac Surgery</li>
-                  <li>Urology</li>
-                  <li>Laparoscopic Surgery</li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>Pain Management</li>
-                  <li>Breast Surgery</li>
-                  <li>Vascular Surgery</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        </>
       );
     } else if (state?.index === 2) {
       return (
@@ -884,11 +1030,11 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 {/* Main Department Image */}
-                <img
+                {/* <img
                   src={images[0]}
                   alt="Department Image"
                   style={styles.imageContainer}
-                />
+                /> */}
                 {/* Detail Department Image */}
                 <img
                   src={chochrane}
@@ -900,11 +1046,11 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 {/* Main Department Image */}
-                <img
+                {/* <img
                   src={images[0]}
                   alt="Department Image"
                   style={styles.imageContainer}
-                />
+                /> */}
                 {/* Detail Department Image */}
                 <img
                   src={research}
@@ -916,11 +1062,11 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 {/* Main Department Image */}
-                <img
+                {/* <img
                   src={images[0]}
                   alt="Department Image"
                   style={styles.imageContainer}
-                />
+                /> */}
                 {/* Detail Department Image */}
                 <img
                   src={qame}
@@ -960,167 +1106,252 @@ const DepartmentDetails = () => {
       //   </div>
       // );
 
+      // return (
+      //   <div style={styles.container}>
+      //     {/* College of Nursing - Training Programs */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>
+      //           College of Nursing - Training Programs
+      //         </span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         {/* Degree Programs Section */}
+      //         <img
+      //           src={images[3]} // Replace with the appropriate image index
+      //           alt="Degree Programs"
+      //           style={styles.imageContainer}
+      //         />
+      //         <h2
+      //           style={{
+      //             textTransform: "uppercase",
+      //             fontWeight: 600,
+      //             fontSize: "24px",
+      //             marginBottom: "15px",
+      //             color: "#34495e",
+      //           }}
+      //         >
+      //           Degree Programs
+      //         </h2>
+      //         <ul style={styles.list}>
+      //           <li>BSc (Nursing) - 4 years, once a year under NUMS</li>
+      //           <li>
+      //             Post RN BSc - 2 years, once a year (for officers commissioned
+      //             before 2011)
+      //           </li>
+      //           <li>MSN - 2 years, started in 2022, once a year under NUMS</li>
+      //         </ul>
+
+      //         {/* Post Basic Specialties Section */}
+      //         <img
+      //           src={images[4]} // Replace with the appropriate image index
+      //           alt="Post Basic Specialties"
+      //           style={styles.imageContainer}
+      //         />
+      //         <h2
+      //           style={{
+      //             textTransform: "uppercase",
+      //             fontWeight: 600,
+      //             fontSize: "24px",
+      //             marginBottom: "15px",
+      //             color: "#34495e",
+      //           }}
+      //         >
+      //           Post Basic Specialties (13 Fields)
+      //         </h2>
+      //         <div style={{ display: "flex", gap: "20px" }}>
+      //           <ul style={styles.list}>
+      //             <li>Intensive Care</li>
+      //             <li>Mental Health</li>
+      //             <li>Nephro/Urology</li>
+      //             <li>Anesthesia</li>
+      //             <li>BM Transplant</li>
+      //             <li>Cardiac ITC</li>
+      //             <li>Trauma & Emergency</li>
+      //           </ul>
+      //           <ul style={styles.list}>
+      //             <li>Pediatrics</li>
+      //             <li>OT</li>
+      //             <li>Oncology</li>
+      //             <li>Rehab Med</li>
+      //             <li>Surgical Burns</li>
+      //             <li>Cardiac Electrophysiology</li>
+      //           </ul>
+      //         </div>
+
+      //         {/* Military & Diploma Courses Section */}
+      //         <img
+      //           src={images[5]} // Replace with the appropriate image index
+      //           alt="Military & Diploma Courses"
+      //           style={styles.imageContainer}
+      //         />
+      //         <h2
+      //           style={{
+      //             textTransform: "uppercase",
+      //             fontWeight: 600,
+      //             fontSize: "24px",
+      //             marginBottom: "15px",
+      //             color: "#34495e",
+      //           }}
+      //         >
+      //           Military & Diploma Courses
+      //         </h2>
+      //         <ul style={styles.list}>
+      //           <li>Basic Military Training (BMT) - 6 weeks, once a year</li>
+      //           <li>Midcareer Course (MCC) - 12 weeks, thrice a year</li>
+      //           <li>
+      //             Snr AFNS Officers Management Course - 6 weeks, once a year
+      //           </li>
+      //           <li>Diploma in Midwifery Nursing - 52 weeks, once a year</li>
+      //           <li>
+      //             Diploma in Post Basic Specialties - 52 weeks, once a year
+      //           </li>
+      //         </ul>
+
+      //         {/* College of Nursing, AFPGMI Section */}
+      //         <img
+      //           src={images[6]} // Replace with the appropriate image index
+      //           alt="College of Nursing, AFPGMI"
+      //           style={styles.imageContainer}
+      //         />
+      //         <h2
+      //           style={{
+      //             textTransform: "uppercase",
+      //             fontWeight: 600,
+      //             fontSize: "24px",
+      //             marginBottom: "15px",
+      //             color: "#34495e",
+      //           }}
+      //         >
+      //           College of Nursing, AFPGMI
+      //         </h2>
+      //         <p style={{ textAlign: "justify", marginBottom: "15px" }}>
+      //           Established in 1960, the College of Nursing has a long-standing
+      //           tradition of excellence in nursing education. Our programs are
+      //           designed to nurture compassionate and highly skilled
+      //           professionals who uphold the highest standards in patient care.
+      //           With a legacy spanning decades, we continue to evolve, adapting
+      //           our curriculum to meet modern healthcare demands.
+      //         </p>
+
+      //         {/* Affiliations Section */}
+      //         <img
+      //           src={images[7]} // Replace with the appropriate image index
+      //           alt="Affiliations"
+      //           style={styles.imageContainer}
+      //         />
+      //         <h2
+      //           style={{
+      //             textTransform: "uppercase",
+      //             fontWeight: 600,
+      //             fontSize: "24px",
+      //             marginBottom: "15px",
+      //             color: "#34495e",
+      //           }}
+      //         >
+      //           Affiliations
+      //         </h2>
+      //         <ul style={styles.list}>
+      //           <li>
+      //             MSN, BSN (Generic) & Post RN BSN degree programs - Affiliated
+      //             with NUMS
+      //           </li>
+      //           <li>
+      //             Post Basic Specialized Courses & Midwifery Nursing -
+      //             Affiliated with NEBP, Lahore
+      //           </li>
+      //           <li>
+      //             Pre-Enrolment & Registration - Recognized by PNC, Islamabad
+      //           </li>
+      //         </ul>
+      //       </div>
+      //     </div>
+      //   </div>
+      // );
       return (
-        <div style={styles.container}>
-          {/* College of Nursing - Training Programs */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>
-                College of Nursing - Training Programs
-              </span>
-            </div>
-            <div style={styles.cardContent}>
-              {/* Degree Programs Section */}
-              <img
-                src={images[3]} // Replace with the appropriate image index
-                alt="Degree Programs"
-                style={styles.imageContainer}
-              />
-              <h2
-                style={{
-                  textTransform: "uppercase",
-                  fontWeight: 600,
-                  fontSize: "24px",
-                  marginBottom: "15px",
-                  color: "#34495e",
-                }}
-              >
-                Degree Programs
-              </h2>
-              <ul style={styles.list}>
-                <li>BSc (Nursing) - 4 years, once a year under NUMS</li>
-                <li>
-                  Post RN BSc - 2 years, once a year (for officers commissioned
-                  before 2011)
-                </li>
-                <li>MSN - 2 years, started in 2022, once a year under NUMS</li>
-              </ul>
-
-              {/* Post Basic Specialties Section */}
-              <img
-                src={images[4]} // Replace with the appropriate image index
-                alt="Post Basic Specialties"
-                style={styles.imageContainer}
-              />
-              <h2
-                style={{
-                  textTransform: "uppercase",
-                  fontWeight: 600,
-                  fontSize: "24px",
-                  marginBottom: "15px",
-                  color: "#34495e",
-                }}
-              >
-                Post Basic Specialties (13 Fields)
-              </h2>
-              <div style={{ display: "flex", gap: "20px" }}>
-                <ul style={styles.list}>
-                  <li>Intensive Care</li>
-                  <li>Mental Health</li>
-                  <li>Nephro/Urology</li>
-                  <li>Anesthesia</li>
-                  <li>BM Transplant</li>
-                  <li>Cardiac ITC</li>
-                  <li>Trauma & Emergency</li>
-                </ul>
-                <ul style={styles.list}>
-                  <li>Pediatrics</li>
-                  <li>OT</li>
-                  <li>Oncology</li>
-                  <li>Rehab Med</li>
-                  <li>Surgical Burns</li>
-                  <li>Cardiac Electrophysiology</li>
-                </ul>
+        <>
+          <div style={styles.container}>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                {/* Main Department Image */}
+                <img
+                  src={images[0]}
+                  alt="Department Image"
+                  style={styles.imageContainer}
+                />
+                {/* Detail Department Image */}
+                <img
+                  src={a}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
               </div>
-
-              {/* Military & Diploma Courses Section */}
-              <img
-                src={images[5]} // Replace with the appropriate image index
-                alt="Military & Diploma Courses"
-                style={styles.imageContainer}
-              />
-              <h2
-                style={{
-                  textTransform: "uppercase",
-                  fontWeight: 600,
-                  fontSize: "24px",
-                  marginBottom: "15px",
-                  color: "#34495e",
-                }}
-              >
-                Military & Diploma Courses
-              </h2>
-              <ul style={styles.list}>
-                <li>Basic Military Training (BMT) - 6 weeks, once a year</li>
-                <li>Midcareer Course (MCC) - 12 weeks, thrice a year</li>
-                <li>
-                  Snr AFNS Officers Management Course - 6 weeks, once a year
-                </li>
-                <li>Diploma in Midwifery Nursing - 52 weeks, once a year</li>
-                <li>
-                  Diploma in Post Basic Specialties - 52 weeks, once a year
-                </li>
-              </ul>
-
-              {/* College of Nursing, AFPGMI Section */}
-              <img
-                src={images[6]} // Replace with the appropriate image index
-                alt="College of Nursing, AFPGMI"
-                style={styles.imageContainer}
-              />
-              <h2
-                style={{
-                  textTransform: "uppercase",
-                  fontWeight: 600,
-                  fontSize: "24px",
-                  marginBottom: "15px",
-                  color: "#34495e",
-                }}
-              >
-                College of Nursing, AFPGMI
-              </h2>
-              <p style={{ textAlign: "justify", marginBottom: "15px" }}>
-                Established in 1960, the College of Nursing has a long-standing
-                tradition of excellence in nursing education. Our programs are
-                designed to nurture compassionate and highly skilled
-                professionals who uphold the highest standards in patient care.
-                With a legacy spanning decades, we continue to evolve, adapting
-                our curriculum to meet modern healthcare demands.
-              </p>
-
-              {/* Affiliations Section */}
-              <img
-                src={images[7]} // Replace with the appropriate image index
-                alt="Affiliations"
-                style={styles.imageContainer}
-              />
-              <h2
-                style={{
-                  textTransform: "uppercase",
-                  fontWeight: 600,
-                  fontSize: "24px",
-                  marginBottom: "15px",
-                  color: "#34495e",
-                }}
-              >
-                Affiliations
-              </h2>
-              <ul style={styles.list}>
-                <li>
-                  MSN, BSN (Generic) & Post RN BSN degree programs - Affiliated
-                  with NUMS
-                </li>
-                <li>
-                  Post Basic Specialized Courses & Midwifery Nursing -
-                  Affiliated with NEBP, Lahore
-                </li>
-                <li>
-                  Pre-Enrolment & Registration - Recognized by PNC, Islamabad
-                </li>
-              </ul>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={b}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={c}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={d}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={e}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={f}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={g}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={h}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
           </div>
-        </div>
+        </>
       );
     } else if (state?.index === 6) {
       return (
