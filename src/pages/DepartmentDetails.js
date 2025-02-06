@@ -6,6 +6,11 @@ import exam1 from "../assets/exam/Slide1.JPG";
 import exam2 from "../assets/exam/Slide2.JPG";
 import picture1 from "../assets/Picture1.png";
 import picture2 from "../assets/Picture2.png";
+import AuxDepart from "../assets/WhatsApp Image 2025-02-06 at 12.15.07_68549c27.jpg";
+import downCell from "../assets/downcell.jpg";
+import chochrane from "../assets/chochrane.jpg";
+import research from "../assets/research.jpg";
+import qame from "../assets/QAME.jpg";
 
 const DepartmentDetails = () => {
   const { id } = useParams();
@@ -54,8 +59,13 @@ const DepartmentDetails = () => {
         paddingLeft: "20px",
         lineHeight: "1.6",
       },
+      detailImage: {
+        width: "100%",
+        marginTop: "20px",
+        borderRadius: "12px",
+        boxShadow: "0 4px 10px rgba(0,0,0,0.15)",
+      },
     };
-
     const images = [
       picture1,
       picture1,
@@ -104,7 +114,7 @@ const DepartmentDetails = () => {
               <ul style={styles.list}>
                 {state?.data?.map((course, index) => (
                   <li key={index}>
-                    {course.coursesOffered} - {course.duration} ({course.type})
+                    {course.coursesOffered} - {course.duration} - {course.type}
                   </li>
                 ))}
               </ul>
@@ -261,7 +271,9 @@ const DepartmentDetails = () => {
                 </ul>
                 <ul style={styles.list}>
                   <li>DIP IN CARDIOLOGY - NUMS | Varies | Specialized</li>
-                  <li>MS (TRANSFUSION MEDICINE) - NUMS | 2 years | Specialized</li>
+                  <li>
+                    MS (TRANSFUSION MEDICINE) - NUMS | 2 years | Specialized
+                  </li>
                 </ul>
               </div>
             </div>
@@ -654,208 +666,457 @@ const DepartmentDetails = () => {
     }
 
     if (state?.index === 4) {
+      // return (
+      //   <div style={styles.container}>
+      //     {/* List Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>List</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <ul style={styles.list}>
+      //           {state?.data?.map((e, _) => (
+      //             <li
+      //               key={_}
+      //               style={{ fontSize: "16px", marginBottom: "10px" }}
+      //             >
+      //               {e}
+      //             </li>
+      //           ))}
+      //         </ul>
+      //       </div>
+      //     </div>
+
+      //     {/* Cochrane Center Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>COCHRANE CENTER (CEBHP)</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[3]}
+      //           alt="Cochrane Center"
+      //           style={styles.imageContainer}
+      //         />
+      //         <p style={{ textAlign: "justify" }}>
+      //           <strong>Established at AFPGMI in Oct 2023</strong>
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           To develop guidelines indigenous to AFs through systematic
+      //           reviews and meta-analysis.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Collaboration with AKU for training of Master Trainers.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Subscription of GRADEpro software for guideline development.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           400+ HCPs trained since Dec 2023.
+      //         </p>
+      //       </div>
+      //     </div>
+
+      //     {/* Research & Development Cell Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>
+      //           RESEARCH & DEVELOPMENT CELL
+      //         </span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[4]}
+      //           alt="Research & Development Cell"
+      //           style={styles.imageContainer}
+      //         />
+      //         <p style={{ textAlign: "justify" }}>
+      //           <strong>
+      //             Developed in Sep 2015 as a center of excellence at AFPGMI
+      //           </strong>
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           For academic support for trainees in medical, dental, and
+      //           nursing services in research projects.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Capacity building of academia by providing comprehensive
+      //           research support services to students, faculty, and HCPs across
+      //           Army.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Conducts research methodology workshops for various levels of
+      //           trainees.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Preparation of dissertation/study projects for all trainees,
+      //           including MSc (HCA), Grd Trainees & MSPH students.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Establishment of state-of-the-art research department
+      //           incorporating various domains of research and development:
+      //         </p>
+      //         <ul style={styles.list}>
+      //           <li>Cochrane Research</li>
+      //           <li>Academic Research</li>
+      //           <li>Ops & Mgmt Research</li>
+      //           <li>Public Health Research</li>
+      //           <li>Nursing Research</li>
+      //           <li>Quality Assurance & Med Edn (QAME)</li>
+      //         </ul>
+      //       </div>
+      //     </div>
+
+      //     {/* DEWS Cell Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>DEWS CELL</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[5]}
+      //           alt="DEWS Cell"
+      //           style={styles.imageContainer}
+      //         />
+      //         <p style={{ textAlign: "justify" }}>
+      //           <strong>Established in Apr 2020</strong>
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Nerve center of Medical Directorate by providing relevant
+      //           insights regarding 33 primary DEWS diseases of outbreak
+      //           potential for related decision-making.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Active surveillance of disease trends in AFs.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Comparative analysis of AFs disease trends with national and
+      //           international trends through weekly and fortnightly DEWS
+      //           reports.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Introduction of AI in DEWS app and trauma registries.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           eDEWS Dashboard – Geo-tagging the accurate location of cases to
+      //           monitor and curtail spread with smart interventions through GIS
+      //           system.
+      //         </p>
+      //       </div>
+      //     </div>
+
+      //     {/* Auxiliary Departments Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>AUXILIARY DEPARTMENTS</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[6]}
+      //           alt="Auxiliary Departments"
+      //           style={styles.imageContainer}
+      //         />
+      //         <p style={{ textAlign: "justify" }}>
+      //           <strong>Established at AFPGMI in Oct 2023</strong>
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           To develop guidelines indigenous to AFs through systematic
+      //           reviews and meta-analysis.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Collaboration with AKU for training of Master Trainers.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Development in Sep 2015 as a center of excellence at AFPGMI for
+      //           academic support for trainees in medical, dental, and nursing
+      //           services in research projects.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Establishment in Apr 2020 to monitor the Covid-19 pandemic in
+      //           AFs, with active surveillance of 33 primary DEWS diseases and
+      //           comparative analysis with national and international trends.
+      //         </p>
+      //         <p style={{ textAlign: "justify" }}>
+      //           Process of systematic evaluation of all aspects of education
+      //           programs by involving all key stakeholders. Focus on curriculum
+      //           quality, teaching staff quality, faculty development, and
+      //           self-assessment processes.
+      //         </p>
+      //       </div>
+      //     </div>
+      //   </div>
+      // );
+      return (
+        <>
+          <div style={styles.container}>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                {/* Main Department Image */}
+                <img
+                  src={images[0]}
+                  alt="Department Image"
+                  style={styles.imageContainer}
+                />
+                {/* Detail Department Image */}
+                <img
+                  src={AuxDepart}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                {/* Main Department Image */}
+                <img
+                  src={images[0]}
+                  alt="Department Image"
+                  style={styles.imageContainer}
+                />
+                {/* Detail Department Image */}
+                <img
+                  src={downCell}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                {/* Main Department Image */}
+                <img
+                  src={images[0]}
+                  alt="Department Image"
+                  style={styles.imageContainer}
+                />
+                {/* Detail Department Image */}
+                <img
+                  src={chochrane}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                {/* Main Department Image */}
+                <img
+                  src={images[0]}
+                  alt="Department Image"
+                  style={styles.imageContainer}
+                />
+                {/* Detail Department Image */}
+                <img
+                  src={research}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                {/* Main Department Image */}
+                <img
+                  src={images[0]}
+                  alt="Department Image"
+                  style={styles.imageContainer}
+                />
+                {/* Detail Department Image */}
+                <img
+                  src={qame}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+          </div>
+        </>
+      );
+    } else if (state?.index === 5) {
+      // return (
+      //   <div style={styles.container}>
+      //     {/* Main Card for List Content */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>List Overview</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <ul style={styles.list}>
+      //           {state?.data?.map((e, _) => (
+      //             <li key={_}>
+      //               {e?.name}
+      //               {e?.subData ? (
+      //                 <ul style={{ listStyleType: "circle", marginLeft: 50 }}>
+      //                   {e?.subData?.map((k, __) => (
+      //                     <li key={__}>{k}</li>
+      //                   ))}
+      //                 </ul>
+      //               ) : null}
+      //             </li>
+      //           ))}
+      //         </ul>
+      //       </div>
+      //     </div>
+      //   </div>
+      // );
+
       return (
         <div style={styles.container}>
-          {/* List Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>List</span>
-            </div>
-            <div style={styles.cardContent}>
-              <ul style={styles.list}>
-                {state?.data?.map((e, _) => (
-                  <li
-                    key={_}
-                    style={{ fontSize: "16px", marginBottom: "10px" }}
-                  >
-                    {e}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* Cochrane Center Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>COCHRANE CENTER (CEBHP)</span>
-            </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[3]}
-                alt="Cochrane Center"
-                style={styles.imageContainer}
-              />
-              <p style={{ textAlign: "justify" }}>
-                <strong>Established at AFPGMI in Oct 2023</strong>
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                To develop guidelines indigenous to AFs through systematic
-                reviews and meta-analysis.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Collaboration with AKU for training of Master Trainers.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Subscription of GRADEpro software for guideline development.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                400+ HCPs trained since Dec 2023.
-              </p>
-            </div>
-          </div>
-
-          {/* Research & Development Cell Section */}
+          {/* College of Nursing - Training Programs */}
           <div style={{ ...styles.card, ":hover": styles.cardHover }}>
             <div style={styles.cardHeader}>
               <span style={styles.headerTitle}>
-                RESEARCH & DEVELOPMENT CELL
+                College of Nursing - Training Programs
               </span>
             </div>
             <div style={styles.cardContent}>
+              {/* Degree Programs Section */}
               <img
-                src={images[4]}
-                alt="Research & Development Cell"
+                src={images[3]} // Replace with the appropriate image index
+                alt="Degree Programs"
                 style={styles.imageContainer}
               />
-              <p style={{ textAlign: "justify" }}>
-                <strong>
-                  Developed in Sep 2015 as a center of excellence at AFPGMI
-                </strong>
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                For academic support for trainees in medical, dental, and
-                nursing services in research projects.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Capacity building of academia by providing comprehensive
-                research support services to students, faculty, and HCPs across
-                Army.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Conducts research methodology workshops for various levels of
-                trainees.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Preparation of dissertation/study projects for all trainees,
-                including MSc (HCA), Grd Trainees & MSPH students.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Establishment of state-of-the-art research department
-                incorporating various domains of research and development:
-              </p>
+              <h2
+                style={{
+                  textTransform: "uppercase",
+                  fontWeight: 600,
+                  fontSize: "24px",
+                  marginBottom: "15px",
+                  color: "#34495e",
+                }}
+              >
+                Degree Programs
+              </h2>
               <ul style={styles.list}>
-                <li>Cochrane Research</li>
-                <li>Academic Research</li>
-                <li>Ops & Mgmt Research</li>
-                <li>Public Health Research</li>
-                <li>Nursing Research</li>
-                <li>Quality Assurance & Med Edn (QAME)</li>
+                <li>BSc (Nursing) - 4 years, once a year under NUMS</li>
+                <li>
+                  Post RN BSc - 2 years, once a year (for officers commissioned
+                  before 2011)
+                </li>
+                <li>MSN - 2 years, started in 2022, once a year under NUMS</li>
               </ul>
-            </div>
-          </div>
 
-          {/* DEWS Cell Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>DEWS CELL</span>
-            </div>
-            <div style={styles.cardContent}>
+              {/* Post Basic Specialties Section */}
               <img
-                src={images[5]}
-                alt="DEWS Cell"
+                src={images[4]} // Replace with the appropriate image index
+                alt="Post Basic Specialties"
                 style={styles.imageContainer}
               />
-              <p style={{ textAlign: "justify" }}>
-                <strong>Established in Apr 2020</strong>
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Nerve center of Medical Directorate by providing relevant
-                insights regarding 33 primary DEWS diseases of outbreak
-                potential for related decision-making.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Active surveillance of disease trends in AFs.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Comparative analysis of AFs disease trends with national and
-                international trends through weekly and fortnightly DEWS
-                reports.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Introduction of AI in DEWS app and trauma registries.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                eDEWS Dashboard – Geo-tagging the accurate location of cases to
-                monitor and curtail spread with smart interventions through GIS
-                system.
-              </p>
-            </div>
-          </div>
+              <h2
+                style={{
+                  textTransform: "uppercase",
+                  fontWeight: 600,
+                  fontSize: "24px",
+                  marginBottom: "15px",
+                  color: "#34495e",
+                }}
+              >
+                Post Basic Specialties (13 Fields)
+              </h2>
+              <div style={{ display: "flex", gap: "20px" }}>
+                <ul style={styles.list}>
+                  <li>Intensive Care</li>
+                  <li>Mental Health</li>
+                  <li>Nephro/Urology</li>
+                  <li>Anesthesia</li>
+                  <li>BM Transplant</li>
+                  <li>Cardiac ITC</li>
+                  <li>Trauma & Emergency</li>
+                </ul>
+                <ul style={styles.list}>
+                  <li>Pediatrics</li>
+                  <li>OT</li>
+                  <li>Oncology</li>
+                  <li>Rehab Med</li>
+                  <li>Surgical Burns</li>
+                  <li>Cardiac Electrophysiology</li>
+                </ul>
+              </div>
 
-          {/* Auxiliary Departments Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>AUXILIARY DEPARTMENTS</span>
-            </div>
-            <div style={styles.cardContent}>
+              {/* Military & Diploma Courses Section */}
               <img
-                src={images[6]}
-                alt="Auxiliary Departments"
+                src={images[5]} // Replace with the appropriate image index
+                alt="Military & Diploma Courses"
                 style={styles.imageContainer}
               />
-              <p style={{ textAlign: "justify" }}>
-                <strong>Established at AFPGMI in Oct 2023</strong>
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                To develop guidelines indigenous to AFs through systematic
-                reviews and meta-analysis.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Collaboration with AKU for training of Master Trainers.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Development in Sep 2015 as a center of excellence at AFPGMI for
-                academic support for trainees in medical, dental, and nursing
-                services in research projects.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Establishment in Apr 2020 to monitor the Covid-19 pandemic in
-                AFs, with active surveillance of 33 primary DEWS diseases and
-                comparative analysis with national and international trends.
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Process of systematic evaluation of all aspects of education
-                programs by involving all key stakeholders. Focus on curriculum
-                quality, teaching staff quality, faculty development, and
-                self-assessment processes.
-              </p>
-            </div>
-          </div>
-        </div>
-      );
-    } else if (state?.index === 5) {
-      return (
-        <div style={styles.container}>
-          {/* Main Card for List Content */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>List Overview</span>
-            </div>
-            <div style={styles.cardContent}>
+              <h2
+                style={{
+                  textTransform: "uppercase",
+                  fontWeight: 600,
+                  fontSize: "24px",
+                  marginBottom: "15px",
+                  color: "#34495e",
+                }}
+              >
+                Military & Diploma Courses
+              </h2>
               <ul style={styles.list}>
-                {state?.data?.map((e, _) => (
-                  <li key={_}>
-                    {e?.name}
-                    {e?.subData ? (
-                      <ul style={{ listStyleType: "circle", marginLeft: 50 }}>
-                        {e?.subData?.map((k, __) => (
-                          <li key={__}>{k}</li>
-                        ))}
-                      </ul>
-                    ) : null}
-                  </li>
-                ))}
+                <li>Basic Military Training (BMT) - 6 weeks, once a year</li>
+                <li>Midcareer Course (MCC) - 12 weeks, thrice a year</li>
+                <li>
+                  Snr AFNS Officers Management Course - 6 weeks, once a year
+                </li>
+                <li>Diploma in Midwifery Nursing - 52 weeks, once a year</li>
+                <li>
+                  Diploma in Post Basic Specialties - 52 weeks, once a year
+                </li>
+              </ul>
+
+              {/* College of Nursing, AFPGMI Section */}
+              <img
+                src={images[6]} // Replace with the appropriate image index
+                alt="College of Nursing, AFPGMI"
+                style={styles.imageContainer}
+              />
+              <h2
+                style={{
+                  textTransform: "uppercase",
+                  fontWeight: 600,
+                  fontSize: "24px",
+                  marginBottom: "15px",
+                  color: "#34495e",
+                }}
+              >
+                College of Nursing, AFPGMI
+              </h2>
+              <p style={{ textAlign: "justify", marginBottom: "15px" }}>
+                Established in 1960, the College of Nursing has a long-standing
+                tradition of excellence in nursing education. Our programs are
+                designed to nurture compassionate and highly skilled
+                professionals who uphold the highest standards in patient care.
+                With a legacy spanning decades, we continue to evolve, adapting
+                our curriculum to meet modern healthcare demands.
+              </p>
+
+              {/* Affiliations Section */}
+              <img
+                src={images[7]} // Replace with the appropriate image index
+                alt="Affiliations"
+                style={styles.imageContainer}
+              />
+              <h2
+                style={{
+                  textTransform: "uppercase",
+                  fontWeight: 600,
+                  fontSize: "24px",
+                  marginBottom: "15px",
+                  color: "#34495e",
+                }}
+              >
+                Affiliations
+              </h2>
+              <ul style={styles.list}>
+                <li>
+                  MSN, BSN (Generic) & Post RN BSN degree programs - Affiliated
+                  with NUMS
+                </li>
+                <li>
+                  Post Basic Specialized Courses & Midwifery Nursing -
+                  Affiliated with NEBP, Lahore
+                </li>
+                <li>
+                  Pre-Enrolment & Registration - Recognized by PNC, Islamabad
+                </li>
               </ul>
             </div>
           </div>
@@ -894,7 +1155,9 @@ const DepartmentDetails = () => {
           {/* College of Nursing - Training Programs */}
           <div style={{ ...styles.card, ":hover": styles.cardHover }}>
             <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>College of Nursing - Training Programs</span>
+              <span style={styles.headerTitle}>
+                College of Nursing - Training Programs
+              </span>
             </div>
             <div style={styles.cardContent}>
               {/* Degree Programs Section */}
@@ -916,10 +1179,13 @@ const DepartmentDetails = () => {
               </h2>
               <ul style={styles.list}>
                 <li>BSc (Nursing) - 4 years, once a year under NUMS</li>
-                <li>Post RN BSc - 2 years, once a year (for officers commissioned before 2011)</li>
+                <li>
+                  Post RN BSc - 2 years, once a year (for officers commissioned
+                  before 2011)
+                </li>
                 <li>MSN - 2 years, started in 2022, once a year under NUMS</li>
               </ul>
-    
+
               {/* Post Basic Specialties Section */}
               <img
                 src={images[4]} // Replace with the appropriate image index
@@ -956,7 +1222,7 @@ const DepartmentDetails = () => {
                   <li>Cardiac Electrophysiology</li>
                 </ul>
               </div>
-    
+
               {/* Military & Diploma Courses Section */}
               <img
                 src={images[5]} // Replace with the appropriate image index
@@ -977,11 +1243,15 @@ const DepartmentDetails = () => {
               <ul style={styles.list}>
                 <li>Basic Military Training (BMT) - 6 weeks, once a year</li>
                 <li>Midcareer Course (MCC) - 12 weeks, thrice a year</li>
-                <li>Snr AFNS Officers Management Course - 6 weeks, once a year</li>
+                <li>
+                  Snr AFNS Officers Management Course - 6 weeks, once a year
+                </li>
                 <li>Diploma in Midwifery Nursing - 52 weeks, once a year</li>
-                <li>Diploma in Post Basic Specialties - 52 weeks, once a year</li>
+                <li>
+                  Diploma in Post Basic Specialties - 52 weeks, once a year
+                </li>
               </ul>
-    
+
               {/* College of Nursing, AFPGMI Section */}
               <img
                 src={images[6]} // Replace with the appropriate image index
@@ -1000,11 +1270,14 @@ const DepartmentDetails = () => {
                 College of Nursing, AFPGMI
               </h2>
               <p style={{ textAlign: "justify", marginBottom: "15px" }}>
-                Established in 1960, the College of Nursing has a long-standing tradition of excellence in nursing education.
-                Our programs are designed to nurture compassionate and highly skilled professionals who uphold the highest standards
-                in patient care. With a legacy spanning decades, we continue to evolve, adapting our curriculum to meet modern healthcare demands.
+                Established in 1960, the College of Nursing has a long-standing
+                tradition of excellence in nursing education. Our programs are
+                designed to nurture compassionate and highly skilled
+                professionals who uphold the highest standards in patient care.
+                With a legacy spanning decades, we continue to evolve, adapting
+                our curriculum to meet modern healthcare demands.
               </p>
-    
+
               {/* Affiliations Section */}
               <img
                 src={images[7]} // Replace with the appropriate image index
@@ -1023,9 +1296,17 @@ const DepartmentDetails = () => {
                 Affiliations
               </h2>
               <ul style={styles.list}>
-                <li>MSN, BSN (Generic) & Post RN BSN degree programs - Affiliated with NUMS</li>
-                <li>Post Basic Specialized Courses & Midwifery Nursing - Affiliated with NEBP, Lahore</li>
-                <li>Pre-Enrolment & Registration - Recognized by PNC, Islamabad</li>
+                <li>
+                  MSN, BSN (Generic) & Post RN BSN degree programs - Affiliated
+                  with NUMS
+                </li>
+                <li>
+                  Post Basic Specialized Courses & Midwifery Nursing -
+                  Affiliated with NEBP, Lahore
+                </li>
+                <li>
+                  Pre-Enrolment & Registration - Recognized by PNC, Islamabad
+                </li>
               </ul>
             </div>
           </div>
@@ -1045,7 +1326,7 @@ const DepartmentDetails = () => {
             textTransform: "uppercase",
             fontWeight: isTitleBold ? 800 : 600,
             fontSize: "28px",
-            color:"#002d72cc"
+            color: "#002d72cc",
           }}
         >
           {" "}
