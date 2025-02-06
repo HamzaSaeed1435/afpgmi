@@ -15,9 +15,15 @@ import first from "../assets/first.jpg";
 import second from "../assets/second.jpg";
 import third from "../assets/third.jpg";
 import four from "../assets/four.jpg";
+import professional from "../assets/professional.jpg"
 import five from "../assets/five.jpg";
 import six from "../assets/six.jpg";
 import seven from "../assets/seven.jpg";
+import depart2 from "../assets/depart2.jpg"
+import depart3 from "../assets/depart3.jpg"
+import depart4 from "../assets/depart4.jpg"
+import depart5 from "../assets/depart5.jpg"
+import depart6 from "../assets/depart6.jpg"
 
 import one from "../assets/one.jpg";
 import two from "../assets/two.jpg";
@@ -32,6 +38,14 @@ import e from "../assets/e.jpg";
 import f from "../assets/f.jpg";
 import g from "../assets/g.jpg";
 import h from "../assets/h.jpg";
+
+import public1 from "../assets/public1.jpg";
+import public2 from "../assets/public2.jpg";
+import public3 from "../assets/public3.jpg";
+import public4 from "../assets/public4.jpg";
+import public5 from "../assets/public5.jpg";
+
+
 
 const DepartmentDetails = () => {
   const { id } = useParams();
@@ -252,7 +266,7 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 <img
-                  src={two}
+                  src={depart2}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -261,7 +275,7 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 <img
-                  src={three}
+                  src={depart3}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -270,7 +284,25 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 <img
-                  src={four4}
+                  src={depart4}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={depart5}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={depart6}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -626,118 +658,176 @@ const DepartmentDetails = () => {
         </>
       );
     } else if (state?.index === 2) {
+      // return (
+      //   <div style={styles.container}>
+      //     {/* List Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>Program Details</span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[0]} // Replace with your image
+      //           alt="Program Details"
+      //           style={styles.imageContainer}
+      //         />
+      //         <ul style={styles.list}>
+      //           {state?.data?.map((e, _) => (
+      //             <li key={_} style={{ marginBottom: "10px" }}>
+      //               {e?.name}
+      //               {e?.subData ? (
+      //                 <ul
+      //                   style={{ listStyleType: "circle", marginLeft: "30px" }}
+      //                 >
+      //                   {e?.subData?.map((k, __) => (
+      //                     <li key={__}>{k}</li>
+      //                   ))}
+      //                 </ul>
+      //               ) : null}
+      //             </li>
+      //           ))}
+      //         </ul>
+      //       </div>
+      //     </div>
+
+      //     {/* Masters in Public Health (MSPH) Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>
+      //           MASTERS IN PUBLIC HEALTH (MSPH)
+      //         </span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[1]} // Replace with your image
+      //           alt="Masters in Public Health"
+      //           style={styles.imageContainer}
+      //         />
+      //         <p style={{ textAlign: "justify", marginTop: "15px" }}>
+      //           <strong>Two years program, under NUMS</strong>
+      //           <br />
+      //           Once a year (30 Students)
+      //           <br />
+      //           Intensive Curriculum with subjects like Basic Public Health
+      //           Sciences, Essential Managerial and Analytical Skills including
+      //           Project Planning and Evaluation, Epidemiological Investigations,
+      //           Health Systems Analysis and Research, Reproductive and Child
+      //           Health, Environmental and Occupational Health, Disease Control.
+      //         </p>
+      //       </div>
+      //     </div>
+
+      //     {/* FD Epidemiology & Lab Training Program (FELTP) Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>
+      //           FD EPIDEMIOLOGY & LAB TRAINING PROGRAM (FELTP)
+      //         </span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[2]} // Replace with your image
+      //           alt="FD Epidemiology & Lab Training Program"
+      //           style={styles.imageContainer}
+      //         />
+      //         <p style={{ textAlign: "justify", marginTop: "15px" }}>
+      //           <strong>
+      //             Centre for Disease Control, Atlanta USA certification
+      //           </strong>
+      //           <br />
+      //           National Institute of Health, Islamabad
+      //           <br />
+      //           Two years program
+      //           <br />
+      //           Once a year (2 to 4 Students)
+      //           <br />
+      //           Focuses on Public Health Work, especially Field Epidemiology,
+      //           Operations Research, and Program Evaluation.
+      //         </p>
+      //       </div>
+      //     </div>
+
+      //     {/* Preventive Health Assistant Course Section */}
+      //     <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+      //       <div style={styles.cardHeader}>
+      //         <span style={styles.headerTitle}>
+      //           PREVENTIVE HEALTH ASSISTANT COURSE
+      //         </span>
+      //       </div>
+      //       <div style={styles.cardContent}>
+      //         <img
+      //           src={images[3]} // Replace with your image
+      //           alt="Preventive Health Assistant Course"
+      //           style={styles.imageContainer}
+      //         />
+      //         <p style={{ textAlign: "justify", marginTop: "15px" }}>
+      //           <strong>Basic Level (23 weeks)</strong>
+      //           <br />
+      //           <strong>Mid Level (39 weeks)</strong>
+      //           <br />
+      //           <strong>Advanced Level (42 weeks)</strong>
+      //         </p>
+      //       </div>
+      //     </div>
+      //   </div>
+      // );
       return (
-        <div style={styles.container}>
-          {/* List Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>Program Details</span>
+        <>
+          <div style={styles.container}>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                {/* Main Department Image */}
+                <img
+                  src={images[0]}
+                  alt="Department Image"
+                  style={styles.imageContainer}
+                />
+                {/* Detail Department Image */}
+                <img
+                  src={public1}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[0]} // Replace with your image
-                alt="Program Details"
-                style={styles.imageContainer}
-              />
-              <ul style={styles.list}>
-                {state?.data?.map((e, _) => (
-                  <li key={_} style={{ marginBottom: "10px" }}>
-                    {e?.name}
-                    {e?.subData ? (
-                      <ul
-                        style={{ listStyleType: "circle", marginLeft: "30px" }}
-                      >
-                        {e?.subData?.map((k, __) => (
-                          <li key={__}>{k}</li>
-                        ))}
-                      </ul>
-                    ) : null}
-                  </li>
-                ))}
-              </ul>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={public2}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
-          </div>
-
-          {/* Masters in Public Health (MSPH) Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>
-                MASTERS IN PUBLIC HEALTH (MSPH)
-              </span>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={public3}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[1]} // Replace with your image
-                alt="Masters in Public Health"
-                style={styles.imageContainer}
-              />
-              <p style={{ textAlign: "justify", marginTop: "15px" }}>
-                <strong>Two years program, under NUMS</strong>
-                <br />
-                Once a year (30 Students)
-                <br />
-                Intensive Curriculum with subjects like Basic Public Health
-                Sciences, Essential Managerial and Analytical Skills including
-                Project Planning and Evaluation, Epidemiological Investigations,
-                Health Systems Analysis and Research, Reproductive and Child
-                Health, Environmental and Occupational Health, Disease Control.
-              </p>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={public4}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={public5}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
             </div>
           </div>
-
-          {/* FD Epidemiology & Lab Training Program (FELTP) Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>
-                FD EPIDEMIOLOGY & LAB TRAINING PROGRAM (FELTP)
-              </span>
-            </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[2]} // Replace with your image
-                alt="FD Epidemiology & Lab Training Program"
-                style={styles.imageContainer}
-              />
-              <p style={{ textAlign: "justify", marginTop: "15px" }}>
-                <strong>
-                  Centre for Disease Control, Atlanta USA certification
-                </strong>
-                <br />
-                National Institute of Health, Islamabad
-                <br />
-                Two years program
-                <br />
-                Once a year (2 to 4 Students)
-                <br />
-                Focuses on Public Health Work, especially Field Epidemiology,
-                Operations Research, and Program Evaluation.
-              </p>
-            </div>
-          </div>
-
-          {/* Preventive Health Assistant Course Section */}
-          <div style={{ ...styles.card, ":hover": styles.cardHover }}>
-            <div style={styles.cardHeader}>
-              <span style={styles.headerTitle}>
-                PREVENTIVE HEALTH ASSISTANT COURSE
-              </span>
-            </div>
-            <div style={styles.cardContent}>
-              <img
-                src={images[3]} // Replace with your image
-                alt="Preventive Health Assistant Course"
-                style={styles.imageContainer}
-              />
-              <p style={{ textAlign: "justify", marginTop: "15px" }}>
-                <strong>Basic Level (23 weeks)</strong>
-                <br />
-                <strong>Mid Level (39 weeks)</strong>
-                <br />
-                <strong>Advanced Level (42 weeks)</strong>
-              </p>
-            </div>
-          </div>
-        </div>
+        </>
       );
     } else if (state?.index === 3) {
       return (
