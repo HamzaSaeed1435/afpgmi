@@ -1104,11 +1104,11 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 {/* Main Department Image */}
-                <img
+                {/* <img
                   src={images[0]}
                   alt="Department Image"
                   style={styles.imageContainer}
-                />
+                /> */}
                 {/* Detail Department Image */}
                 <img
                   src={downCell}
