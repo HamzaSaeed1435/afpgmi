@@ -49,6 +49,16 @@ import public5 from "../assets/public5.jpg";
 
 import only from "../assets/only.jpg";
 
+import zz from "../assets/zz.jpg";
+import xx from "../assets/xx.jpg";
+import cc from "../assets/cc.jpg";
+import vv from "../assets/vv.jpg";
+import bb from "../assets/bb.jpg";
+import nn from "../assets/nn.jpg";
+import mm from "../assets/mm.jpg";
+import ll from "../assets/ll.jpg";
+import kk from "../assets/kk.jpg";
+
 import insideNursing from "../assets/nusrsingInside.jpg";
 import insideAux from "../assets/insideAux.jpg";
 const DepartmentDetails = () => {
@@ -598,7 +608,7 @@ const DepartmentDetails = () => {
                 />
                 {/* Detail Department Image */}
                 <img
-                  src={first}
+                  src={zz}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -607,7 +617,7 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 <img
-                  src={second}
+                  src={xx}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -616,7 +626,7 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 <img
-                  src={third}
+                  src={cc}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -625,7 +635,7 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 <img
-                  src={four}
+                  src={vv}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -634,7 +644,7 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 <img
-                  src={five}
+                  src={bb}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -643,7 +653,7 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 <img
-                  src={medicine}
+                  src={nn}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -652,7 +662,7 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 <img
-                  src={six}
+                  src={mm}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -661,7 +671,16 @@ const DepartmentDetails = () => {
             <div style={{ ...styles.card, ":hover": styles.cardHover }}>
               <div style={styles.cardContent}>
                 <img
-                  src={seven}
+                  src={ll}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={kk}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
