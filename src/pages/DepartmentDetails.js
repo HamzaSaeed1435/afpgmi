@@ -15,15 +15,17 @@ import first from "../assets/first.jpg";
 import second from "../assets/second.jpg";
 import third from "../assets/third.jpg";
 import four from "../assets/four.jpg";
-import professional from "../assets/professional.jpg"
+import professional from "../assets/professional.jpg";
 import five from "../assets/five.jpg";
 import six from "../assets/six.jpg";
+import medicine from "../assets/medicine.jpg";
+
 import seven from "../assets/seven.jpg";
-import depart2 from "../assets/depart2.jpg"
-import depart3 from "../assets/depart3.jpg"
-import depart4 from "../assets/depart4.jpg"
-import depart5 from "../assets/depart5.jpg"
-import depart6 from "../assets/depart6.jpg"
+import depart2 from "../assets/depart2.jpg";
+import depart3 from "../assets/depart3.jpg";
+import depart4 from "../assets/depart4.jpg";
+import depart5 from "../assets/depart5.jpg";
+import depart6 from "../assets/depart6.jpg";
 
 import one from "../assets/one.jpg";
 import two from "../assets/two.jpg";
@@ -45,8 +47,10 @@ import public3 from "../assets/public3.jpg";
 import public4 from "../assets/public4.jpg";
 import public5 from "../assets/public5.jpg";
 
+import only from "../assets/only.jpg";
 
-
+import insideNursing from "../assets/nusrsingInside.jpg";
+import insideAux from "../assets/insideAux.jpg";
 const DepartmentDetails = () => {
   const { id } = useParams();
   const { state } = useLocation();
@@ -257,7 +261,7 @@ const DepartmentDetails = () => {
                 />
                 {/* Detail Department Image */}
                 <img
-                  src={one}
+                  src={only}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -631,6 +635,15 @@ const DepartmentDetails = () => {
               <div style={styles.cardContent}>
                 <img
                   src={five}
+                  alt="Department Detail"
+                  style={styles.detailImage}
+                />
+              </div>
+            </div>
+            <div style={{ ...styles.card, ":hover": styles.cardHover }}>
+              <div style={styles.cardContent}>
+                <img
+                  src={medicine}
                   alt="Department Detail"
                   style={styles.detailImage}
                 />
@@ -1089,7 +1102,7 @@ const DepartmentDetails = () => {
               <div style={styles.cardContent}>
                 {/* Main Department Image */}
                 <img
-                  src={images[0]}
+                  src={insideAux}
                   alt="Department Image"
                   style={styles.imageContainer}
                 />
@@ -1365,7 +1378,7 @@ const DepartmentDetails = () => {
               <div style={styles.cardContent}>
                 {/* Main Department Image */}
                 <img
-                  src={images[0]}
+                  src={insideNursing}
                   alt="Department Image"
                   style={styles.imageContainer}
                 />

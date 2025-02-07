@@ -6,7 +6,8 @@ import DepartmentsHeroImg3 from "../assets/3.jpg";
 import DepartmentsHeroImg4 from "../assets/4.jpg";
 import DepartmentsHeroImg5 from "../assets/1.jpg";
 import DepartmentsHeroImg6 from "../assets/3.jpg";
-
+import nursingDepartment from "../assets/nursing.jpg";
+import auxDepartment from "../assets/auxdepartmentMain.jpg";
 const Departments = () => {
   const navigate = useNavigate();
 
@@ -178,11 +179,11 @@ const Departments = () => {
     // },
     {
       name: "Auxiliary department",
-      image: DepartmentsHeroImg1,
+      image: auxDepartment,
     },
     {
       name: "College of Nursing",
-      image: DepartmentsHeroImg1,
+      image: nursingDepartment,
       data: [
         {
           name: "MSN, BSN (Generic) & Post RN BSN Degree Program affiliated with NUMS ",
