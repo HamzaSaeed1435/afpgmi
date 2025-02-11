@@ -59,8 +59,11 @@ import mm from "../assets/mm.jpg";
 import ll from "../assets/ll.jpg";
 import kk from "../assets/kk.jpg";
 
-import insideNursing from "../assets/nusrsingInside.jpg";
+import insideNursing from "../assets/Cllg of nursing inside upr pic.jpeg";
 import insideAux from "../assets/insideAux.jpg";
+import insideAuxPicture from "../assets//aux dept inside pic.jpg";
+import publicDepartment from "../assets/Dept of public health inside.jpg";
+
 const DepartmentDetails = () => {
   const { id } = useParams();
   const { state } = useLocation();
@@ -101,8 +104,13 @@ const DepartmentDetails = () => {
       },
       imageContainer: {
         width: "100%",
-        height: "250px",
+        height: "300px",
         objectFit: "cover",
+      },
+      imageContainerAux: {
+        width: "100%",
+        height: "300px",
+        objectFit: "fill",
       },
       list: {
         paddingLeft: "20px",
@@ -810,9 +818,9 @@ const DepartmentDetails = () => {
               <div style={styles.cardContent}>
                 {/* Main Department Image */}
                 <img
-                  src={images[0]}
+                  src={publicDepartment}
                   alt="Department Image"
-                  style={styles.imageContainer}
+                  style={styles.imageContainerAux}
                 />
                 {/* Detail Department Image */}
                 <img
@@ -1121,9 +1129,9 @@ const DepartmentDetails = () => {
               <div style={styles.cardContent}>
                 {/* Main Department Image */}
                 <img
-                  src={insideAux}
+                  src={insideAuxPicture}
                   alt="Department Image"
-                  style={styles.imageContainer}
+                  style={styles.imageContainerAux}
                 />
                 {/* Detail Department Image */}
                 <img
