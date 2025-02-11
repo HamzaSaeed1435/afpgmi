@@ -8,13 +8,15 @@ import DepartmentsHeroImg5 from "../assets/1.jpg";
 import DepartmentsHeroImg6 from "../assets/3.jpg";
 import nursingDepartment from "../assets/nursing.jpg";
 import auxDepartment from "../assets/auxdepartmentMain.jpg";
+import msc from "../assets/MSC.jpg";
+
 const Departments = () => {
   const navigate = useNavigate();
 
   const departmentsData = [
     {
       name: "DEPARTMENT OF MANAGEMENT SCIENCES",
-      image: DepartmentsHeroImg1,
+      image: msc,
       data: [
         {
           coursesOffered: "MSc Health Care Administration",
