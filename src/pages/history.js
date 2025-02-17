@@ -68,10 +68,6 @@ const History = ({ src, title }) => {
 
   ];
 
-
-
-
-
   
   return (
     <div className="campus-life">
