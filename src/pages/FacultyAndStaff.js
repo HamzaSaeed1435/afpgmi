@@ -13,7 +13,7 @@ const peopleData = [
   {
     name: "Dr Tanveer Ahmed Qureshi",
     qualification: "Deputy Commandant/ Controller Exam",
-    gender: "female",
+    gender: "male",
   },
   {
     name: "Dr Ayesha Abubakar Mitha",
@@ -533,9 +533,9 @@ const FacultyAndStaff = () => {
               <div
                 className="card"
                 key={index}
-                onClick={
-                  index === 0 ? () => window.open(Resume, "_blank") : () => {}
-                }
+                // onClick={
+                //   index === 0 ? () => window.open(Resume, "_blank") : () => {}
+                // }
               >
                 <div
                   style={{ backgroundDRor: "#fff", alignItems: "center" }}
